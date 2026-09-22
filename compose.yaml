@@ -1,0 +1,11 @@
+services:
+  default:
+    build: .
+    init: true
+    # No network. The agent has no legitimate need for one, and an outbound
+    # connection would be an unlogged side channel in a scheming eval.
+    network_mode: none
+    # Keep a trajectory from burning the machine if the agent loops on a build.
+    cpus: 2.0
+    mem_limit: 2gb
+    command: ["tail", "-f", "/dev/null"]
