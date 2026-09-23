@@ -1,5 +1,5 @@
 [project]
-name = "cfscheming"
+name = "agent-evals-DAGs"
 version = "0.1.0"
 description = "Counterfactual interventions on agent reasoning: does evaluation-awareness causally drive covert behaviour?"
 readme = "README.md"
